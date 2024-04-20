@@ -1,0 +1,385 @@
+/* -------------------------- Fuentes -------------------------- */
+
+.ubuntu-light {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.ubuntu-bold {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.fleur-de-leah-regular {
+  font-family: "Fleur De Leah", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+
+/*-------------------------- Base HTML ------------------------------*/
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 1em;
+  color: rgb(234, 138, 138);
+  background-color: rgb(104, 84, 84);
+  font-family: "Ubuntu Light", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: rgb(242, 242, 242);
+  display: block;
+}
+
+h3,
+h4 {
+  margin-bottom: 0.375em;
+  line-height: 1.2em;
+}
+
+h1,
+.text--xxl {
+  margin-bottom: 0.375em;
+  line-height: 1.2em;
+  font-size: 3.75em;
+  font-weight: 31.25em;
+}
+
+h2,
+.text--xl {
+  margin-bottom: 0.375em;
+  line-height: 1.2em;
+  font-size: 2.5em;
+  font-weight: 56.25em;
+}
+
+ul, li {
+  list-style: none;
+  padding: 1px;
+  line-height: 1.5;
+  
+}
+
+
+.fa,
+.fas {
+  font-weight: 900px;
+}
+
+.nav-link.selected,
+.button-lo-que-hago {
+  transition: 0.2s;
+}
+
+/*---------------------------------- HEADER / NAV BAR--------------------------------*/
+header {
+  background-color: rgb(234, 138, 138);
+  padding: 20px 0;
+  box-shadow: 0 0 30px rgba(26, 0, 0, 0.3);
+}
+
+.nav-header .nav-menu {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.nav-link {
+  line-height: 2.5;
+  padding: 0 10px;
+  border-radius: 100px;
+}
+
+.nav-link:hover {
+  color: rgb(104, 84, 84);
+}
+
+.nav-link.selected {
+  color: rgb(235, 213, 213);
+  padding: 0 30px;
+}
+
+.boton-menu-bar {
+  display: none;
+  font-size: 16px;
+  margin: 0 15px;
+  cursor: pointer;
+}
+
+.boton-menu-bar:hover {
+  color: rgb(234, 138, 138);
+}
+
+.nav-link.selected,
+.button-lo-que-hago {
+  transition: 0.2s;
+}
+
+.menu-bar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  max-width: 300px;
+  width: 100%;
+  height: 100%;
+  z-index: 1000;
+  padding: 30px 0 0 20px;
+  background-color: #463232;
+  box-shadow: -10px 0 20px rgba(0, 0, 0, 0.3);
+  transform: translateX(100%);
+  transition: 0.2s;
+}
+
+.menu-bar.visible {
+  transform: translateX(0%);
+}
+
+.boton-cerrar-menu {
+  position: absolute;
+  right: 20px;
+  border-radius: 50%;
+  height: 30px;
+  width: 30px;
+}
+
+.secciones {
+  font-size: 2rem;
+  margin-left: 20px;
+}
+
+.menu-bar .nav-menu {
+  display: flex;
+  flex-direction: column;
+}
+
+@media (max-width: 1100px) {
+  header {
+   padding: 25px 20px; 
+  display: none;
+  }
+}
+
+@media (max-width: 650px) {
+  .nav-header {
+    display: none;
+  }
+
+  .menu-icon-container {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .boton-menu-bar {
+    display: flex;
+    align-items: center;
+  }
+}
+
+/*-------------------------------------- SOBRE MÍ------------------------------------*/
+.contenido-sobre-mi {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.hola {
+  font-size: 1.875em;
+  margin-top: 0px;
+  margin-bottom: 0.31em;
+  font-weight: 50em;
+}
+
+.lasschar,
+.milagros {
+  line-height: 40px;
+}
+
+.lasschar {
+  margin-top: 0em;
+  margin-bottom: 0.3em;
+  color: rgb(235, 213, 213);
+  font-family: "Ubuntu", sans-serif;
+  width: 90%;
+  max-width: 1200px;
+}
+
+.milagros {
+  margin-top: 0;
+  margin-bottom: 0.3em;
+  margin-left: 40px;
+  color: rgb(235, 213, 213);
+  font-family: "Fleur De Leah", cursive;
+}
+
+.descripcion-nombre {
+  color: rgb(235, 213, 213);
+  font-size: 1.56em;
+  margin-bottom: 1em;
+}
+
+.seccion-sobre-mi {
+  min-height: 44.375em;
+  margin-top: 90px;
+}
+
+.info-sobre-mi {
+  width: 100%;
+  max-width: 31.25em;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: left;
+}
+
+.mi-imagen {
+  max-width: 31.25em;
+  border-radius: 50%;
+  overflow: hidden;
+  box-shadow: -0px 0 30px rgba(0, 0, 0, 0.3);
+}
+
+.button-lo-que-hago {
+  background-color: rgb(234, 138, 138);
+  color: rgb(242, 242, 242);
+  padding: 15px 40px;
+  border-radius: 100px;
+  font-weight: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/*----------------------------------- skills ------------------------------------*/
+.titulo-skills {
+  font-size: 45px;
+  font-weight: 900;
+}
+
+.descripcion-skills {
+  max-width: 600px;
+  font-size: 25px;
+  margin: 0 auto 10px;
+  text-align: center;
+  line-height: 1.4;
+}
+
+.front-skills {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+.front-skills-lista {
+  width: 200px;
+  margin: 15px;
+  color: #000000;
+  background-color: rgb(255, 243, 243);
+  border: 1px solid rgb(234, 138, 138);
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.nombre-skill {
+  font-weight: 800px;
+  color: rgb(69, 24, 24);
+  font-size: 20px;
+}
+
+.img-skills{
+  font-size: 4.71em;
+  margin-top: 24px;
+  margin-bottom: 20px;
+  display: block;
+  transition: 0.3s;
+}
+
+
+/*------------------------------------- footer -------------------------------------------*/
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: end;
+  padding: 40px 30px;
+  background-color: rgb(234, 138, 138);
+  color: white;
+}
+
+.footer-social-icon {
+  width: 50px; 
+  height: 50px; 
+  border-radius: 50%; 
+  background-color: white;
+  display: flex;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5); 
+  color: #000000;
+  text-align: center;
+  margin-top: 5px;
+  font-size: 40px;
+}
+
+.footer-nav-menu {
+  display: flex;
+  margin: 0;
+}
+
+.footer-nav-item {
+  margin: 0 10px;
+}
+
+.footer-nav-link {
+  font-size: 15px;
+  color: white;
+}
+
+
+
+.footer-social-link {
+  border-radius: 50%;
+  width: 2.7rem;
+  margin: 10px;
+}
+
+
+
+
+
+/*----------------------------- MOBILE / TABLET ------------------------------*/
+header {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+
+.section {
+  display: flex;
+  justify-content: center;
+  padding: 110px 40px 130px;
+  text-align: center;
+  }
+
+
+.maqueta {
+  width: 90%;
+  max-width: 1200px;
+  justify-content: center;
+}
+
+.selected {
+  background-color:rgb(104, 84, 84);
+  color: white;
+  padding: 0 30px;
+  border-radius: 100px;
+}
