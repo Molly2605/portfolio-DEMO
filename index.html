@@ -29,24 +29,12 @@
   </head>
   <body>
     <header>
-      <div class="maqueta">
-        <nav class="nav-header">
-          <ul class="nav-menu">
-            <li class="datos-nav">
-              <a href="#sobre-mi" class="nav-link">SOBRE MÍ</a>
-            </li>
-            <li class="datos-nav">
-              <a href="#skills" class="nav-link">CONOCIMIENTOS</a>
-            </li>
-            <li class="datos-nav">
-              <a href="#proyectos" class="nav-link">PROYECTOS</a>
-            </li>
-            <li class="datos-nav">
-              <a href="#contacto" class="nav-link selected">CONTACTO</a>
-            </li>
-          </ul>
-        </nav>
-      </div>
+      <nav class="nav-header">
+        <a href="#sobre-mi" class="nav-link">SOBRE MÍ</a>
+        <a href="#skills" class="nav-link">CONOCIMIENTOS</a>
+        <a href="#proyectos" class="nav-link">PROYECTOS</a>
+        <a href="#contacto" class="nav-link selected">CONTACTO</a>
+      </nav>
     </header>
     <!---------------------------------------INFO SOBRE MI-------------------------------------------->
     <section class="menu-bar" id="menu-bar" aria-hidden="true">
@@ -56,7 +44,7 @@
       <h2 class="secciones">Secciones</h2>
     </section>
     <section class="section seccion-sobre-mi" id="sobre-mi">
-      <div class="maqueta contenido-sobre-mi">
+      <div class="contenido-sobre-mi">
         <div class="info-sobre-mi">
           <p class="saludo">Hola! me llamo</p>
           <h1 class="lasschar">Lasschar</h1>
@@ -64,14 +52,14 @@
           <p class="descripcion-nombre">
             argentina developer, ballet dancer y fan de los comicss
           </p>
-          <a href="#projectos" class="button-lo-que-hago">LO QUE HAGO</a>
+          <a href="#proyectos" class="lo-que-hago">LO QUE HAGO</a>
         </div>
         <img src="img/conejito.jpg" alt="" class="mi-imagen" />
       </div>
     </section>
     <!---------------------------------------SEPARACION SECTION-------------------------------------------->
     <section class="section skills-skills" id="skills">
-      <div class="maqueta">
+      <div>
         <h2 class="titulo-skills">Mis conocimientos</h2>
         <p class="descripcion-skills">
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur
@@ -124,50 +112,40 @@
     </section>
 
     <!--------------------------------------proyectos-------------------------------------------->
-
-    <!--------------------------------------footer-------------------------------------------->
+    <!---->
     <footer>
-      <nav class="footer-nav">
-        <ul class="footer-nav-menu">
-          <li class="footer-nav-item">
-            <a href="#sobre-mi" class="footer-nav-link">SOBRE MÍ</a>
-          </li>
-          <li class="footer-nav-item">
-            <a href="#skills" class="footer-nav-link">CONOCIMIENTOS</a>
-          </li>
-          <li class="footer-nav-item">
-            <a href="#projectos" class="footer-nav-link">PROYECTOS</a>
-          </li>
-          <li class="footer-nav-item">
-            <a href="#contacto" class="footer-nav-link">CONTACTO</a>
-          </li>
-        </ul>
-      </nav>
+      <div class="footer-row">
+        <a href="#sobre-mi" class="nav-link">SOBRE MÍ</a>
+        <a href="#skills" class="nav-link">CONOCIMIENTOS</a>
+        <a href="#proyectos" class="nav-link">PROYECTOS</a>
+        <a href="#contacto" class="nav-link">CONTACTO</a>
+      </div>
       <!-------------------------------LINKS DE REDES SOCIALES FOOTER------------------------------>
+      <div class="footer-row">
+        <a
+          href="https://github.com/Molly2605"
+          class="footer-social-link"
+          aria-label="Github"
+        >
+          <i class="devicon-github-original colored footer-social-icon"></i>
+        </a>
 
-      <a
-        href="https://github.com/Molly2605"
-        class="footer-social-link"
-        aria-label="Github"
-      >
-        <i class="devicon-github-original colored footer-social-icon"></i>
-      </a>
+        <a
+          href="https://www.linkedin.com/in/milagros-lasschar/"
+          class="footer-social-link"
+          aria-label="Linkedin"
+        >
+          <i class="devicon-linkedin-plain footer-social-icon"></i>
+        </a>
 
-      <a
-        href="https://www.linkedin.com/in/milagros-lasschar/"
-        class="footer-social-link"
-        aria-label="Linkedin"
-      >
-        <i class="devicon-linkedin-plain footer-social-icon"></i>
-      </a>
-
-      <a
-        href="mili_lasschar@hotmail.com"
-        class="footer-social-link"
-        aria-label="Email"
-      >
-        <i class="fas fa-envelope footer-social-icon"></i>
-      </a>
+        <a
+          href="mili_lasschar@hotmail.com"
+          class="footer-social-link"
+          aria-label="Email"
+        >
+          <i class="fas fa-envelope footer-social-icon"></i>
+        </a>
+      </div>
     </footer>
   </body>
 </html>
