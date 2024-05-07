@@ -19,7 +19,7 @@
     />
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
     />
     <link
       rel="stylesheet"
@@ -28,26 +28,31 @@
     />
   </head>
   <body>
-    <header>
-      <nav class="nav-header">
-        <a href="#sobre-mi" class="nav-link">SOBRE MÍ</a>
-        <a href="#skills" class="nav-link">CONOCIMIENTOS</a>
-        <a href="#proyectos" class="nav-link">PROYECTOS</a>
-        <a href="#contacto" class="nav-link selected">CONTACTO</a>
-      </nav>
-    </header>
+    <input type="checkbox" id="menu-toggle" class="menu-toggle" />
+  <div class="sidebar" id="sidebar">
+    <nav class="nav-sidebar">
+      <ul class="menu">
+        <li><a href="#sobre-mi" class="nav-link">SOBRE MÍ</a></li>
+        <li><a href="#skills" class="nav-link">CONOCIMIENTOS</a></li>
+        <li><a href="#proyectos" class="nav-link">PROYECTOS</a></li>
+        <li><a href="#contacto" class="nav-link">CONTACTO</a></li>
+      </ul>
+    </nav>
+  </div>
+  <label for="menu-toggle" class="burger-menu" id="burger-menu">
+    <span></span>
+    <span></span>
+    <span></span>
+  </label>
     <!---------------------------------------INFO SOBRE MI-------------------------------------------->
     <section class="menu-bar" id="menu-bar" aria-hidden="true">
-      <button class="boton-cerrar-menu" aria-label="Cerrar Menú" tabindex="-1">
-        <i class="fas fa-times" aria-hidden="true"></i>
-      </button>
       <h2 class="secciones">Secciones</h2>
     </section>
     <section class="section seccion-sobre-mi" id="sobre-mi">
       <div class="contenido-sobre-mi">
         <div class="info-sobre-mi">
           <p class="saludo">Hola! me llamo</p>
-          <h1 class="lasschar">Lasschar</h1>
+          <p class="lasschar">Lasschar</p>
           <h1 class="milagros">milagros belén .</h1>
           <p class="descripcion-nombre">
             argentina developer, ballet dancer y fan de los comicss
@@ -57,7 +62,7 @@
         <img src="img/conejito.jpg" alt="" class="mi-imagen" />
       </div>
     </section>
-    <!---------------------------------------SEPARACION SECTION-------------------------------------------->
+    <!----------------------------------------------------------------------------------->
     <section class="section skills-skills" id="skills">
       <div>
         <h2 class="titulo-skills">Mis conocimientos</h2>
@@ -67,38 +72,30 @@
           excepturi delectus eos laborum saepe quasi illum id deleniti.
           Accusamus molestiae laudantium corporis!
         </p>
-        <div class="lista-oficial front-skills">
+        <div class="proyectos-mios">
           <div class="front-skills-lista">
-            <p class="nombre-skill">HTML 5</p>
             <i class="devicon-html5-plain colored img-skills"></i>
           </div>
           <div class="front-skills-lista">
-            <p class="nombre-skill">CSS 3</p>
             <i class="devicon-css3-plain colored img-skills"></i>
           </div>
           <div class="front-skills-lista">
-            <p class="nombre-skill">SASS</p>
             <i class="devicon-sass-original colored img-skills"></i>
           </div>
           <div class="front-skills-lista">
-            <p class="nombre-skill">JAVASCRIPT</p>
             <i class="devicon-javascript-plain colored img-skills"></i>
           </div>
           <div class="front-skills-lista">
-            <p class="nombre-skill">REACT</p>
             <i class="devicon-react-original colored img-skills"></i>
           </div>
           <div class="front-skills-lista">
-            <p class="nombre-skill">GIT</p>
             <i class="devicon-git-plain colored img-skills"></i>
           </div>
         </div>
       </div>
     </section>
-    <section class="section quote-section">
-      <div class="column content">
-        <i class="fas fa-light fa-heart quote-icon"></i>
-
+    <section class="section section-quote">
+      <div>
         <blockquote>
           <p class="quote">
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eligendi
@@ -107,12 +104,89 @@
             minima aut totam praesentium aliquam.
           </p>
         </blockquote>
+        <i class="far fa-heart"></i>
         <h2 class="quote-author"></h2>
       </div>
     </section>
 
     <!--------------------------------------proyectos-------------------------------------------->
-    <!---->
+    <section class="section mis-proyectos" id="proyectos">
+      <div class="contenido-proyecto">
+        <h2 class="mis-proyectos-titulo">Mis proyectos</h2>
+        <p class="descripcion-mis-proyectos">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis
+          delectus non est tempore provident hic sunt magnam laborum minus
+          quisquam facilis praesentium dolorem cumque eos tempora dolores rerum,
+          explicabo officia?
+        </p>
+        <div class="proyectos-mios">
+          <div class="box-proyecto">
+            <img
+              class="img-pro"
+              src="img/portfolio.png"
+              alt="imagen portafolio"
+            />
+            <p class="nombre-proyecto">Portfolio</p>
+          </div>
+          <div class="box-proyecto">
+            <img class="img-pro" src="img/memes.png" alt="imagen memes" />
+            <p class="nombre-proyecto">Generador de memes</p>
+          </div>
+          <div class="box-proyecto">
+            <img class="img-pro" src="img/match3.png" alt="imagen match 3" />
+            <p class="nombre-proyecto">Match 3</p>
+          </div>
+          <div class="box-proyecto">
+            <img class="img-pro" src="img/money.png" alt="imagen gastos" />
+            <p class="nombre-proyecto">Controlador de gastos</p>
+          </div>
+          <div class="box-proyecto">
+            <img class="img-pro" src="img/meet.png" alt="imagen reunion" />
+            <p class="nombre-proyecto">Administrador de reuniones</p>
+          </div>
+          <div class="box-proyecto">
+            <img class="img-pro" src="img/all-app.png" alt="imagen app" />
+            <p class="nombre-proyecto">Todo app</p>
+          </div>
+          <div class="box-proyecto">
+            <img class="img-pro" src="img/movie.png" alt="imagen pelicula" />
+            <p class="nombre-proyecto">Buscador de películas</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contacto" class="section">
+      <div class="container">
+        <h2>Contactame</h2>
+        <form action="#" method="post">
+          <div class="form-group">
+            <input type="text" name="nombre" placeholder="Nombre" required />
+          </div>
+          <div class="form-group">
+            <input
+              type="text"
+              name="apellido"
+              placeholder="Apellido"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <input
+              type="email"
+              name="email"
+              placeholder="Correo electrónico"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <textarea name="mensaje" placeholder="Mensaje" required></textarea>
+          </div>
+          <button type="submit">Enviar</button>
+        </form>
+      </div>
+    </section>
+    <!------------------------------------------------------------------------------------------->
     <footer>
       <div class="footer-row">
         <a href="#sobre-mi" class="nav-link">SOBRE MÍ</a>
@@ -122,27 +196,18 @@
       </div>
       <!-------------------------------LINKS DE REDES SOCIALES FOOTER------------------------------>
       <div class="footer-row">
-        <a
-          href="https://github.com/Molly2605"
-          class="footer-social-link"
-          aria-label="Github"
-        >
-          <i class="devicon-github-original colored footer-social-icon"></i>
+        <a href="https://github.com/Molly2605" aria-label="Github">
+          <i class="fab fa-github footer-social-icon"></i>
         </a>
 
         <a
           href="https://www.linkedin.com/in/milagros-lasschar/"
-          class="footer-social-link"
           aria-label="Linkedin"
         >
-          <i class="devicon-linkedin-plain footer-social-icon"></i>
+          <i class="fab fa-linkedin-in footer-social-icon"></i>
         </a>
 
-        <a
-          href="mili_lasschar@hotmail.com"
-          class="footer-social-link"
-          aria-label="Email"
-        >
+        <a href="mili_lasschar@hotmail.com" aria-label="Email">
           <i class="fas fa-envelope footer-social-icon"></i>
         </a>
       </div>
