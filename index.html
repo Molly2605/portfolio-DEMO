@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Milagros Lasschar</title>
-    <link rel="stylesheet" href="style/index.css" />
+    <link rel="stylesheet" href="styles/index.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -28,76 +28,86 @@
     />
   </head>
   <body>
-    <input type="checkbox" id="menu-toggle" class="menu-toggle" />
-  <div class="sidebar" id="sidebar">
-    <nav class="nav-sidebar">
-      <ul class="menu">
-        <li><a href="#sobre-mi" class="nav-link">SOBRE MÍ</a></li>
-        <li><a href="#skills" class="nav-link">CONOCIMIENTOS</a></li>
-        <li><a href="#proyectos" class="nav-link">PROYECTOS</a></li>
-        <li><a href="#contacto" class="nav-link">CONTACTO</a></li>
-      </ul>
-    </nav>
-  </div>
-  <label for="menu-toggle" class="burger-menu" id="burger-menu">
-    <span></span>
-    <span></span>
-    <span></span>
-  </label>
-    <!---------------------------------------INFO SOBRE MI-------------------------------------------->
-    <section class="menu-bar" id="menu-bar" aria-hidden="true">
-      <h2 class="secciones">Secciones</h2>
-    </section>
-    <section class="section seccion-sobre-mi" id="sobre-mi">
-      <div class="contenido-sobre-mi">
-        <div class="info-sobre-mi">
-          <p class="saludo">Hola! me llamo</p>
-          <p class="lasschar">Lasschar</p>
-          <h1 class="milagros">milagros belén .</h1>
-          <p class="descripcion-nombre">
-            argentina developer, ballet dancer y fan de los comicss
+    <!--SIDEBAR MENU-->
+    <input type="checkbox" id="sidebar-toggle" class="sidebar-toggle" />
+    <div class="sidebar">
+      <nav>
+        <ul class="sidebar-list">
+          <li><a href="#about-me" class="section-link">SOBRE MÍ</a></li>
+          <li><a href="#skills" class="section-link">CONOCIMIENTOS</a></li>
+          <li><a href="#projects" class="section-link">PROYECTOS</a></li>
+          <li><a href="#contact-me" class="section-link">CONTACTO</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <label for="sidebar-toggle" class="burger-icon">
+      <span></span>
+      <span></span>
+      <span></span>
+    </label>
+
+    <!--ABOUT ME-->
+    <section class="section about-me" id="about-me">
+      <div class="horizontal-content-box">
+        <div class="about-me-info">
+          <p>¡Hola! me llamo</p>
+          <p class="my-surname hover-highlight">Lasschar</p>
+          <h1 class="my-name hover-highlight">milagros belén</h1>
+          <p class="introduction section-description">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Modi
+            obcaecati commodi alias nesciunt beatae aspernatur doloribus eveniet
+            mollitia. Necessitatibus tenetur dignissimos repudiandae a sunt, in
+            iste similique tempora vel explicabo?
           </p>
-          <a href="#proyectos" class="lo-que-hago">LO QUE HAGO</a>
+          <a href="#projects" class="section-link my-projects-button"
+            >MIS PROYECTOS</a
+          >
         </div>
-        <img src="img/conejito.jpg" alt="" class="mi-imagen" />
+
+        <img src="images/bunny.jpg" alt="Mi foto" class="profile-picture" />
       </div>
     </section>
-    <!----------------------------------------------------------------------------------->
-    <section class="section skills-skills" id="skills">
+
+    <!--SKILLS-->
+    <section class="section" id="skills">
       <div>
-        <h2 class="titulo-skills">Mis conocimientos</h2>
-        <p class="descripcion-skills">
+        <h2 class="section-title">Mis conocimientos</h2>
+        <p class="section-description">
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur
           corporis mollitia, ipsa deserunt consequatur aliquid vitae error
           excepturi delectus eos laborum saepe quasi illum id deleniti.
           Accusamus molestiae laudantium corporis!
         </p>
-        <div class="proyectos-mios">
-          <div class="front-skills-lista">
-            <i class="devicon-html5-plain colored img-skills"></i>
+        <div class="interactive-list">
+          <div class="skill-element hover-grow">
+            <i class="devicon-html5-plain colored"></i>
           </div>
-          <div class="front-skills-lista">
-            <i class="devicon-css3-plain colored img-skills"></i>
+          <div class="skill-element hover-grow">
+            <i class="devicon-css3-plain colored"></i>
           </div>
-          <div class="front-skills-lista">
-            <i class="devicon-sass-original colored img-skills"></i>
+          <div class="skill-element hover-grow">
+            <i class="devicon-sass-original colored"></i>
           </div>
-          <div class="front-skills-lista">
-            <i class="devicon-javascript-plain colored img-skills"></i>
+          <div class="skill-element hover-grow">
+            <i class="devicon-javascript-plain colored"></i>
           </div>
-          <div class="front-skills-lista">
-            <i class="devicon-react-original colored img-skills"></i>
+          <div class="skill-element hover-grow">
+            <i class="devicon-react-original colored"></i>
           </div>
-          <div class="front-skills-lista">
-            <i class="devicon-git-plain colored img-skills"></i>
+          <div class="skill-element hover-grow">
+            <i class="devicon-git-plain colored"></i>
           </div>
         </div>
       </div>
     </section>
-    <section class="section section-quote">
+
+    <!--QUOTE-->
+    <section class="section">
       <div>
+        <h2 class="section-title">Una persona sabia una vez dijo...</h2>
         <blockquote>
-          <p class="quote">
+          <p class="section-description quote">
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eligendi
             quaerat aspernatur laboriosam doloremque iste perspiciatis veniam
             culpa beatae magni quo natus nostrum, laudantium exercitationem sit
@@ -105,110 +115,122 @@
           </p>
         </blockquote>
         <i class="far fa-heart"></i>
-        <h2 class="quote-author"></h2>
+        <h2 class="quote-author">Un escritor latín, hace mucho tiempo.</h2>
       </div>
     </section>
 
-    <!--------------------------------------proyectos-------------------------------------------->
-    <section class="section mis-proyectos" id="proyectos">
-      <div class="contenido-proyecto">
-        <h2 class="mis-proyectos-titulo">Mis proyectos</h2>
-        <p class="descripcion-mis-proyectos">
+    <!--PORTFOLIO-->
+    <section class="section" id="projects">
+      <div class="content-box">
+        <h2 class="section-title">Mis proyectos</h2>
+        <p class="section-description">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis
           delectus non est tempore provident hic sunt magnam laborum minus
           quisquam facilis praesentium dolorem cumque eos tempora dolores rerum,
           explicabo officia?
         </p>
-        <div class="proyectos-mios">
-          <div class="box-proyecto">
-            <img
-              class="img-pro"
-              src="img/portfolio.png"
-              alt="imagen portafolio"
-            />
-            <p class="nombre-proyecto">Portfolio</p>
+        <div class="interactive-list">
+          <div class="project-box hover-grow">
+            <img src="images/portfolio.png" alt="imagen portafolio" />
+            <p class="project-title">Portafolio</p>
           </div>
-          <div class="box-proyecto">
-            <img class="img-pro" src="img/memes.png" alt="imagen memes" />
-            <p class="nombre-proyecto">Generador de memes</p>
+          <div class="project-box hover-grow">
+            <img src="images/memes.png" alt="imagen memes" />
+            <p class="project-title">Generador de memes</p>
           </div>
-          <div class="box-proyecto">
-            <img class="img-pro" src="img/match3.png" alt="imagen match 3" />
-            <p class="nombre-proyecto">Match 3</p>
+          <div class="project-box hover-grow">
+            <img src="images/match3.png" alt="imagen match 3" />
+            <p class="project-title">Match 3</p>
           </div>
-          <div class="box-proyecto">
-            <img class="img-pro" src="img/money.png" alt="imagen gastos" />
-            <p class="nombre-proyecto">Controlador de gastos</p>
+          <div class="project-box hover-grow">
+            <img src="images/money.png" alt="imagen gastos" />
+            <p class="project-title">Controlador de gastos</p>
           </div>
-          <div class="box-proyecto">
-            <img class="img-pro" src="img/meet.png" alt="imagen reunion" />
-            <p class="nombre-proyecto">Administrador de reuniones</p>
+          <div class="project-box hover-grow">
+            <img src="images/meet.png" alt="imagen reunion" />
+            <p class="project-title">Administrador de reuniones</p>
           </div>
-          <div class="box-proyecto">
-            <img class="img-pro" src="img/all-app.png" alt="imagen app" />
-            <p class="nombre-proyecto">Todo app</p>
+          <div class="project-box hover-grow">
+            <img src="images/all-app.png" alt="imagen app" />
+            <p class="project-title">Todo app</p>
           </div>
-          <div class="box-proyecto">
-            <img class="img-pro" src="img/movie.png" alt="imagen pelicula" />
-            <p class="nombre-proyecto">Buscador de películas</p>
+          <div class="project-box hover-grow">
+            <img src="images/movie.png" alt="imagen pelicula" />
+            <p class="project-title">Buscador de películas</p>
           </div>
         </div>
       </div>
     </section>
 
-    <section id="contacto" class="section">
-      <div class="container">
-        <h2>Contactame</h2>
-        <form action="#" method="post">
-          <div class="form-group">
-            <input type="text" name="nombre" placeholder="Nombre" required />
-          </div>
-          <div class="form-group">
-            <input
-              type="text"
-              name="apellido"
-              placeholder="Apellido"
-              required
-            />
-          </div>
-          <div class="form-group">
-            <input
-              type="email"
-              name="email"
-              placeholder="Correo electrónico"
-              required
-            />
-          </div>
-          <div class="form-group">
-            <textarea name="mensaje" placeholder="Mensaje" required></textarea>
-          </div>
-          <button type="submit">Enviar</button>
-        </form>
+    <!--CONTACT ME-->
+    <section id="contact-me" class="section">
+      <div class="horizontal-content-box contact-form">
+        <div>
+          <h2>Contactame</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque quo
+            nobis voluptatum tenetur! Id, nesciunt? Modi quasi repudiandae quam
+            hic quo, qui cumque nam voluptates, ipsam, tempora eaque numquam
+            eligendi.
+          </p>
+        </div>
+        <div>
+          <h2>Escribime</h2>
+          <form action="#" method="post">
+            <div class="form-field">
+              <input type="text" name="nombre" placeholder="Nombre" required />
+            </div>
+            <div class="form-field">
+              <input
+                type="text"
+                name="apellido"
+                placeholder="Apellido"
+                required
+              />
+            </div>
+            <div class="form-field">
+              <input
+                type="email"
+                name="email"
+                placeholder="Correo electrónico"
+                required
+              />
+            </div>
+            <div class="form-field">
+              <textarea
+                name="mensaje"
+                placeholder="Mensaje"
+                required
+              ></textarea>
+            </div>
+            <button type="submit">Enviar</button>
+          </form>
+        </div>
       </div>
     </section>
-    <!------------------------------------------------------------------------------------------->
+
     <footer>
+      <!--SECTION LINK FOOTER-->
       <div class="footer-row">
-        <a href="#sobre-mi" class="nav-link">SOBRE MÍ</a>
-        <a href="#skills" class="nav-link">CONOCIMIENTOS</a>
-        <a href="#proyectos" class="nav-link">PROYECTOS</a>
-        <a href="#contacto" class="nav-link">CONTACTO</a>
+        <a href="#about-me" class="section-link">SOBRE MÍ</a>
+        <a href="#skills" class="section-link">CONOCIMIENTOS</a>
+        <a href="#projects" class="section-link">PROYECTOS</a>
+        <a href="#contact-me" class="section-link">CONTACTO</a>
       </div>
-      <!-------------------------------LINKS DE REDES SOCIALES FOOTER------------------------------>
+
+      <!--SOCIAL MEDIA LINK FOOTER-->
       <div class="footer-row">
         <a href="https://github.com/Molly2605" aria-label="Github">
-          <i class="fab fa-github footer-social-icon"></i>
+          <i class="fab fa-github footer-social-icon hover-grow"></i>
         </a>
-
         <a
           href="https://www.linkedin.com/in/milagros-lasschar/"
           aria-label="Linkedin"
         >
-          <i class="fab fa-linkedin-in footer-social-icon"></i>
+          <i class="fab fa-linkedin-in footer-social-icon hover-grow"></i>
         </a>
-
         <a href="mili_lasschar@hotmail.com" aria-label="Email">
-          <i class="fas fa-envelope footer-social-icon"></i>
+          <i class="fas fa-envelope footer-social-icon hover-grow"></i>
         </a>
       </div>
     </footer>

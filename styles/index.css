@@ -1,0 +1,468 @@
+/*FONTS BEGIN*/
+
+.ubuntu-light {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.ubuntu-bold {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.fleur-de-leah-regular {
+  font-family: "Fleur De Leah", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/*FONTS END*/
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 1em;
+  color: rgb(187, 132, 147);
+  font-family: "Ubuntu Light", sans-serif;
+  background-color: #090204;
+}
+
+h1,
+h2 {
+  margin-bottom: 0.375em;
+  line-height: 1.2em;
+}
+
+h1 {
+  font-size: 3.75em;
+  font-weight: 31.25em;
+}
+
+h2 {
+  font-size: 2.5em;
+  font-weight: 56.25em;
+}
+
+a {
+  text-decoration: none;
+  color: rgb(242, 242, 242);
+  display: block;
+}
+
+ul,
+li {
+  list-style: none;
+  padding: 1px;
+  line-height: 1.5;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px 30px;
+  background-color: rgb(236, 28, 98);
+  color: white;
+}
+
+/*COMMON CLASSES*/
+
+.section {
+  display: flex;
+  justify-content: center;
+  padding: 110px 40px 130px;
+  text-align: center;
+  transition: background-color 0.3s ease;
+}
+
+.section:hover {
+  background-color: rgba(116, 16, 51, 0.7);
+}
+
+.content-box,
+.horizontal-content-box {
+  max-width: 1100px;
+}
+
+.horizontal-content-box {
+  width: 100%;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  display: flex;
+}
+
+.section-title {
+  font-size: 45px;
+  font-weight: 900;
+  color: rgb(235, 213, 213);
+  background-image: linear-gradient(#ec1c62, #ec1c62);
+  background-size: 0 100%;
+  background-repeat: no-repeat;
+  transition: 0.3s;
+}
+
+.section-description {
+  max-width: 600px;
+  font-size: 25px;
+  margin: 0 auto 10px;
+  text-align: center;
+  line-height: 1.4;
+  color: rgb(235, 213, 213);
+}
+
+.section-link {
+  line-height: 2.5;
+  padding: 0 10px;
+  border-radius: 100px;
+  transition: 0.2s;
+}
+
+.section-link:hover {
+  color: rgb(0, 0, 0);
+}
+
+.section-link.selected {
+  color: rgb(235, 213, 213);
+  padding: 0 30px;
+}
+
+.interactive-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 40px;
+  justify-content: center;
+}
+
+.hover-highlight:hover,
+.section-title:hover {
+  background-size: 100% 100%;
+}
+
+.hover-grow:hover {
+  transform: scale(1.1);
+}
+
+/*SIDEBAR CLASSES*/
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: -250px;
+  width: 250px;
+  height: 100%;
+  background-color: rgb(237, 29, 98);
+  z-index: 1000;
+  transition: left 0.3s ease;
+}
+
+.sidebar-list {
+  padding-top: 2em;
+}
+
+.burger-icon {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  cursor: pointer;
+  z-index: 1001;
+}
+.burger-icon span {
+  display: block;
+  width: 30px;
+  height: 3px;
+  background-color: rgb(255, 255, 255);
+  margin-bottom: 5px;
+  transition: transform 0.3s ease;
+}
+
+/*SIDEBAR TOGGLING ANIMATION*/
+
+.sidebar-toggle {
+  display: none;
+}
+
+.sidebar-toggle:checked + .sidebar {
+  left: 0;
+}
+.sidebar-toggle:checked + .sidebar + .burger-icon span:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+.sidebar-toggle:checked + .sidebar + .burger-icon span:nth-child(2) {
+  opacity: 0;
+}
+.sidebar-toggle:checked + .sidebar + .burger-icon span:nth-child(3) {
+  transform: rotate(-45deg) translate(5px, -5px);
+}
+
+/*ABOUT ME*/
+
+.my-surname,
+.my-name {
+  line-height: 40px;
+  color: rgb(235, 213, 213);
+  margin-top: 0em;
+  background-image: linear-gradient(#ec1c62, #ec1c62);
+  background-size: 0 100%;
+  background-repeat: no-repeat;
+  transition: 0.3s;
+}
+
+.my-surname {
+  font-family: "Ubuntu", sans-serif;
+  width: 90%;
+  max-width: 1200px;
+  margin-bottom: 0.375em;
+  font-size: 3.75em;
+  font-weight: 300;
+}
+
+.my-name {
+  margin-bottom: 0.3em;
+  margin-left: 40px;
+  font-family: "Fleur De Leah", cursive;
+}
+
+.introduction {
+  text-align: left;
+  margin-bottom: 1em;
+}
+
+.about-me {
+  min-height: 44.375em;
+  margin-top: 90px;
+}
+
+.about-me-info {
+  width: 100%;
+  max-width: 31.25em;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: left;
+}
+
+.profile-picture {
+  width: 100%;
+  max-width: 31.25em;
+  border-radius: 50%;
+  overflow: hidden;
+  box-shadow: -0px 0 30px rgb(255, 30, 105);
+  margin: 0 30px;
+  transition-property: background-imge;
+  transition-duration: 1s;
+  transition-timing-function: ease-in;
+}
+
+.my-projects-button {
+  background-color: rgb(236, 28, 98);
+  padding: 15px 40px;
+  border-radius: 100px;
+  font-weight: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/*SKILLS*/
+
+.skill-element {
+  padding: 5px;
+  width: 15%;
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 4.71em;
+  margin-top: 24px;
+  margin-bottom: 20px;
+  display: block;
+  transition: 0.3s;
+  height: auto;
+}
+
+/*QUOTE*/
+
+.far {
+  font-size: 60px;
+  text-align: center;
+  color: rgb(236, 28, 98);
+}
+
+.quote {
+  font-family: "Ubuntu Light", sans-serif;
+  color: rgb(236, 28, 98);
+  margin-bottom: 30px;
+}
+
+/*PORTFOLIO*/
+
+.project-title {
+  font-weight: 600;
+  margin-top: 20px;
+  line-height: 1.4;
+  color: rgb(112, 66, 100);
+}
+
+.project-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: calc(20% - 20px);
+  margin: 0.75em;
+  border-radius: 10px;
+  padding: 5px;
+  overflow: hidden;
+  background-color: #ffffff;
+}
+
+/*CONTACT FORM*/
+
+.contact-form {
+  width: 50%;
+  margin: 50px auto;
+  background-color: rgb(255, 255, 255);
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: -0px 0 30px rgba(0, 0, 0, 0.3);
+}
+
+.contact-form h2 {
+  text-align: center;
+  color: rgb(237, 29, 98);
+}
+
+.form-field {
+  margin-bottom: 30px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 15px;
+  border: 1px solid #480b1f;
+  border-radius: 5px;
+}
+
+button[type="submit"] {
+  background-color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
+  padding: 15px 30px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  float: right;
+  font-size: 20px;
+  margin: 0 15px;
+  box-shadow: -0px 0 30px rgba(0, 0, 0, 0.3);
+}
+
+button[type="submit"]:hover {
+  background-color: rgb(236, 28, 98);
+  transition: 0.2s;
+}
+
+/*FOOTER*/
+.footer-row {
+  display: inline-flex;
+  align-content: center;
+}
+
+.footer-row a {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+.footer-social-icon {
+  font-size: 24px;
+  color: rgb(0, 0, 0);
+  background-color: #ffffff;
+  border-radius: 50%;
+  padding: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.fas,
+.fab {
+  font-size: 30px;
+  text-align: center;
+}
+
+/* ------------------- Non-PC device styles ----------------------------*/
+
+/*---------------- Mobile -------------------------*/
+
+@media only screen and (max-width: 768px) {
+  .section-link {
+    padding: 10px 20px;
+    margin: 5px;
+  }
+
+  .about-me-info {
+    align-items: center;
+    text-align: center;
+  }
+
+  .profile-picture {
+    margin: 20px 0;
+  }
+
+  .skill-element {
+    width: 33.33%;
+  }
+
+  .quote {
+    font-size: 20px;
+  }
+
+  .project-box {
+    width: calc(50% - 20px);
+  }
+
+  .contact-form {
+    width: 80%;
+  }
+}
+
+/*---------------- tablet ----------------- */
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .about-me-info {
+    width: 45%;
+  }
+
+  .profile-picture {
+    width: 45%;
+    margin: 0;
+  }
+
+  .skill-element {
+    width: 20%;
+  }
+
+  .project-box {
+    width: calc(33.33% - 20px);
+  }
+}
+
+@media only screen and (min-width: 1025px) and (max-width: 1280px) {
+  .about-me-info {
+    width: 45%;
+  }
+
+  .profile-picture {
+    width: 45%;
+    margin: 0;
+  }
+
+  .skill-element {
+    width: 25%;
+  }
+
+  .project-box {
+    width: calc(33.33% - 20px);
+  }
+}
