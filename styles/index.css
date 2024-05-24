@@ -1,3 +1,15 @@
+:root {
+  --color-primary: rgb(236, 28, 98);
+  --white: rgb(255, 255, 255);
+  --black:rgb(0, 0, 0);
+  --color-secondary: rgb(187, 132, 147);
+  --color-background: rgb(9, 2, 4);
+  --color-highlight: rgb(235, 213, 213);
+  --color-accent:rgb(112, 66, 100);
+  --color-link: rgb(242, 242, 242);
+  --color-shadow: rgba(0, 0, 0, 0.3);
+}
+
 /*FONTS BEGIN*/
 
 .ubuntu-light {
@@ -26,9 +38,9 @@
 
 body {
   font-size: 1em;
-  color: rgb(187, 132, 147);
+  color:var(--color-secondary);
   font-family: "Ubuntu Light", sans-serif;
-  background-color: #090204;
+  background-color: var(--color-background);
 }
 
 h1,
@@ -49,7 +61,7 @@ h2 {
 
 a {
   text-decoration: none;
-  color: rgb(242, 242, 242);
+  color: var(--color-link);
   display: block;
 }
 
@@ -66,8 +78,8 @@ footer {
   justify-content: space-between;
   align-items: center;
   padding: 40px 30px;
-  background-color: rgb(236, 28, 98);
-  color: white;
+  background-color: var(--color-primary);
+  color: var(--white);
 }
 
 /*COMMON CLASSES*/
@@ -100,7 +112,7 @@ footer {
 .section-title {
   font-size: 45px;
   font-weight: 900;
-  color: rgb(235, 213, 213);
+  color: var(--color-highlight);
   background-image: linear-gradient(#ec1c62, #ec1c62);
   background-size: 0 100%;
   background-repeat: no-repeat;
@@ -113,7 +125,7 @@ footer {
   margin: 0 auto 10px;
   text-align: center;
   line-height: 1.4;
-  color: rgb(235, 213, 213);
+  color: var(--color-highlight);
 }
 
 .section-link {
@@ -124,11 +136,11 @@ footer {
 }
 
 .section-link:hover {
-  color: rgb(0, 0, 0);
+  color:var(--black);
 }
 
 .section-link.selected {
-  color: rgb(235, 213, 213);
+  color: var(--color-highlight);
   padding: 0 30px;
 }
 
@@ -176,7 +188,7 @@ footer {
   display: block;
   width: 30px;
   height: 3px;
-  background-color: rgb(255, 255, 255);
+  background-color: var(--white);
   margin-bottom: 5px;
   transition: transform 0.3s ease;
 }
@@ -205,7 +217,7 @@ footer {
 .my-surname,
 .my-name {
   line-height: 40px;
-  color: rgb(235, 213, 213);
+  color: var(--color-highlight);
   margin-top: 0em;
   background-image: linear-gradient(#ec1c62, #ec1c62);
   background-size: 0 100%;
@@ -260,7 +272,7 @@ footer {
 }
 
 .my-projects-button {
-  background-color: rgb(236, 28, 98);
+  background-color:var(--color-primary);
   padding: 15px 40px;
   border-radius: 100px;
   font-weight: 500px;
@@ -289,12 +301,12 @@ footer {
 .far {
   font-size: 60px;
   text-align: center;
-  color: rgb(236, 28, 98);
+  color: var(--color-primary);
 }
 
 .quote {
   font-family: "Ubuntu Light", sans-serif;
-  color: rgb(236, 28, 98);
+  color:var(--color-primary);
   margin-bottom: 30px;
 }
 
@@ -304,7 +316,7 @@ footer {
   font-weight: 600;
   margin-top: 20px;
   line-height: 1.4;
-  color: rgb(112, 66, 100);
+  color: var(--color-accent);
 }
 
 .project-box {
@@ -324,10 +336,10 @@ footer {
 .contact-form {
   width: 50%;
   margin: 50px auto;
-  background-color: rgb(255, 255, 255);
+  background-color:var(--white);
   padding: 40px;
   border-radius: 10px;
-  box-shadow: -0px 0 30px rgba(0, 0, 0, 0.3);
+  box-shadow: -0px 0 30px var(--color-shadow);
 }
 
 .contact-form h2 {
@@ -349,8 +361,8 @@ textarea {
 }
 
 button[type="submit"] {
-  background-color: rgb(0, 0, 0);
-  color: rgb(255, 255, 255);
+  background-color:var(--black);
+  color:var(--white);
   padding: 15px 30px;
   border: none;
   border-radius: 10px;
@@ -358,11 +370,11 @@ button[type="submit"] {
   float: right;
   font-size: 20px;
   margin: 0 15px;
-  box-shadow: -0px 0 30px rgba(0, 0, 0, 0.3);
+  box-shadow: -0px 0 30px var(--color-shadow);
 }
 
 button[type="submit"]:hover {
-  background-color: rgb(236, 28, 98);
+  background-color:var(--color-primary);
   transition: 0.2s;
 }
 
@@ -379,8 +391,8 @@ button[type="submit"]:hover {
 
 .footer-social-icon {
   font-size: 24px;
-  color: rgb(0, 0, 0);
-  background-color: #ffffff;
+  color:var(--black);
+  background-color:var(--white);
   border-radius: 50%;
   padding: 10px;
   transition: background-color 0.3s ease;
