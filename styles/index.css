@@ -1,11 +1,11 @@
 :root {
   --color-primary: rgb(236, 28, 98);
   --white: rgb(255, 255, 255);
-  --black:rgb(0, 0, 0);
+  --black: rgb(0, 0, 0);
   --color-secondary: rgb(187, 132, 147);
   --color-background: rgb(9, 2, 4);
   --color-highlight: rgb(235, 213, 213);
-  --color-accent:rgb(112, 66, 100);
+  --color-accent: rgb(112, 66, 100);
   --color-link: rgb(242, 242, 242);
   --color-shadow: rgba(0, 0, 0, 0.3);
 }
@@ -38,9 +38,9 @@
 
 body {
   font-size: 1em;
-  color:var(--color-secondary);
+  color: var(--color-secondary);
   font-family: "Ubuntu Light", sans-serif;
-  background-color: var(--color-background);
+ background-color: black;
 }
 
 h1,
@@ -68,8 +68,6 @@ a {
 ul,
 li {
   list-style: none;
-  padding: 1px;
-  line-height: 1.5;
 }
 
 footer {
@@ -77,7 +75,7 @@ footer {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  padding: 40px 30px;
+  padding: 2.5rem 1.875rem;
   background-color: var(--color-primary);
   color: var(--white);
 }
@@ -87,30 +85,30 @@ footer {
 .section {
   display: flex;
   justify-content: center;
-  padding: 110px 40px 130px;
+  padding: 6.875rem 2.5rem 8.125rem;
   text-align: center;
   transition: background-color 0.3s ease;
 }
 
 .section:hover {
-  background-color: rgba(116, 16, 51, 0.7);
+  background-color: rgba(255, 23, 104, 0.398);
 }
 
 .content-box,
 .horizontal-content-box {
-  max-width: 1100px;
+  max-width: 68.75rem;
 }
 
 .horizontal-content-box {
   width: 100%;
   flex-direction: row;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-evenly;
   display: flex;
 }
 
 .section-title {
-  font-size: 45px;
+  font-size: 2.8125rem;
   font-weight: 900;
   color: var(--color-highlight);
   background-image: linear-gradient(#ec1c62, #ec1c62);
@@ -120,9 +118,9 @@ footer {
 }
 
 .section-description {
-  max-width: 600px;
-  font-size: 25px;
-  margin: 0 auto 10px;
+  max-width: 37.5rem;
+  font-size: 1.5625rem;
+  margin: 0 auto 0.625rem;
   text-align: center;
   line-height: 1.4;
   color: var(--color-highlight);
@@ -130,24 +128,24 @@ footer {
 
 .section-link {
   line-height: 2.5;
-  padding: 0 10px;
-  border-radius: 100px;
+  padding: 0 0.625rem;
+  border-radius: 6.25rem;
   transition: 0.2s;
 }
 
 .section-link:hover {
-  color:var(--black);
+  color: var(--white);
 }
 
 .section-link.selected {
   color: var(--color-highlight);
-  padding: 0 30px;
+  padding: 0 1.875rem;
 }
 
 .interactive-list {
   display: flex;
   flex-wrap: wrap;
-  margin-top: 40px;
+  margin-top: 2.5rem;
   justify-content: center;
 }
 
@@ -165,8 +163,8 @@ footer {
 .sidebar {
   position: fixed;
   top: 0;
-  left: -250px;
-  width: 250px;
+  left: -15.625rem;
+  width: 15.625rem;
   height: 100%;
   background-color: rgb(237, 29, 98);
   z-index: 1000;
@@ -179,17 +177,17 @@ footer {
 
 .burger-icon {
   position: fixed;
-  top: 20px;
-  left: 20px;
+  top: 1.25rem;
+  left: 1.25rem;
   cursor: pointer;
   z-index: 1001;
 }
 .burger-icon span {
   display: block;
-  width: 30px;
-  height: 3px;
+  width: 1.875rem;
+  height: 0.1875rem;
   background-color: var(--white);
-  margin-bottom: 5px;
+  margin-bottom: 0.3125rem;
   transition: transform 0.3s ease;
 }
 
@@ -203,20 +201,20 @@ footer {
   left: 0;
 }
 .sidebar-toggle:checked + .sidebar + .burger-icon span:nth-child(1) {
-  transform: rotate(45deg) translate(5px, 5px);
+  transform: rotate(45deg) translate(0.3125rem, 0.3125rem);
 }
 .sidebar-toggle:checked + .sidebar + .burger-icon span:nth-child(2) {
   opacity: 0;
 }
 .sidebar-toggle:checked + .sidebar + .burger-icon span:nth-child(3) {
-  transform: rotate(-45deg) translate(5px, -5px);
+  transform: rotate(-45deg) translate(0.3125rem, -0.3125rem);
 }
 
 /*ABOUT ME*/
 
 .my-surname,
 .my-name {
-  line-height: 40px;
+  line-height: 2.5rem;
   color: var(--color-highlight);
   margin-top: 0em;
   background-image: linear-gradient(#ec1c62, #ec1c62);
@@ -228,7 +226,7 @@ footer {
 .my-surname {
   font-family: "Ubuntu", sans-serif;
   width: 90%;
-  max-width: 1200px;
+  max-width: 75rem;
   margin-bottom: 0.375em;
   font-size: 3.75em;
   font-weight: 300;
@@ -236,18 +234,19 @@ footer {
 
 .my-name {
   margin-bottom: 0.3em;
-  margin-left: 40px;
+  margin-left: 2.5rem;
   font-family: "Fleur De Leah", cursive;
 }
 
 .introduction {
   text-align: left;
   margin-bottom: 1em;
+  color: var(--color-link);
 }
 
 .about-me {
   min-height: 44.375em;
-  margin-top: 90px;
+  margin-top: 5.625rem;
 }
 
 .about-me-info {
@@ -261,21 +260,21 @@ footer {
 
 .profile-picture {
   width: 100%;
-  max-width: 31.25em;
+  max-width: 50%;
   border-radius: 50%;
   overflow: hidden;
-  box-shadow: -0px 0 30px rgb(255, 30, 105);
-  margin: 0 30px;
+  box-shadow: 0rem 0 1.875rem rgb(255, 30, 105);
+  margin: 0 1.875rem;
   transition-property: background-imge;
   transition-duration: 1s;
   transition-timing-function: ease-in;
 }
 
 .my-projects-button {
-  background-color:var(--color-primary);
-  padding: 15px 40px;
-  border-radius: 100px;
-  font-weight: 500px;
+  background-color: var(--color-primary);
+  padding: 0.9375rem 2.5rem;
+  border-radius: 6.25rem;
+  font-weight: 31.25rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -284,13 +283,13 @@ footer {
 /*SKILLS*/
 
 .skill-element {
-  padding: 5px;
+  padding: 0.3125rem;
   width: 15%;
   display: flex;
   flex-wrap: wrap;
   font-size: 4.71em;
-  margin-top: 24px;
-  margin-bottom: 20px;
+  margin-top: 1.5rem;
+  margin-bottom: 1.25rem;
   display: block;
   transition: 0.3s;
   height: auto;
@@ -299,34 +298,34 @@ footer {
 /*QUOTE*/
 
 .far {
-  font-size: 60px;
+  font-size: 3.75rem;
   text-align: center;
   color: var(--color-primary);
 }
 
 .quote {
   font-family: "Ubuntu Light", sans-serif;
-  color:var(--color-primary);
-  margin-bottom: 30px;
+  color: var(--color-primary);
+  margin-bottom: 1.875rem;
 }
 
 /*PORTFOLIO*/
 
 .project-title {
   font-weight: 600;
-  margin-top: 20px;
-  line-height: 1.4;
+  margin-top: 1.25rem;
   color: var(--color-accent);
+  text-align: center;
 }
 
 .project-box {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  width: calc(20% - 20px);
+  width: calc(20% - 1.25rem);
   margin: 0.75em;
-  border-radius: 10px;
-  padding: 5px;
+  border-radius: 0.625rem;
+  padding: 0.3125rem;
   overflow: hidden;
   background-color: #ffffff;
 }
@@ -335,46 +334,63 @@ footer {
 
 .contact-form {
   width: 50%;
-  margin: 50px auto;
-  background-color:var(--white);
-  padding: 40px;
-  border-radius: 10px;
-  box-shadow: -0px 0 30px var(--color-shadow);
+  margin: 3.125rem auto;
+  background-color: var(--white);
+  padding: 2.5rem;
+  border-radius: 0.625rem;
+  box-shadow: 0rem 0 1.875rem var(--color-shadow);
 }
 
 .contact-form h2 {
-  text-align: center;
+  text-align: left;
   color: rgb(237, 29, 98);
+  margin-top: 0.25rem;
+}
+
+.contact-form p,
+a {
+  color: var(--black);
+  text-align: left;
+  text-align: justify;
+  border: 0.25rem;
+  max-width: 25rem;
+  line-height: 1.4;
 }
 
 .form-field {
-  margin-bottom: 30px;
+  margin-bottom: 10%;
+  text-align: right;
+}
+
+.form-list h2 {
+  color: rgb(237, 29, 98);
 }
 
 input[type="text"],
 input[type="email"],
 textarea {
   width: 100%;
-  padding: 15px;
-  border: 1px solid #480b1f;
-  border-radius: 5px;
+  padding: 0.9375rem;
+  border: 0.0625rem solid #480b1f;
+  border-radius: 0.3125rem;
 }
 
 button[type="submit"] {
-  background-color:var(--black);
-  color:var(--white);
-  padding: 15px 30px;
+  background-color: var(--black);
+  color: var(--white);
+  align-self: flex-end;
+  padding: 0.9375rem 1.875rem;
   border: none;
-  border-radius: 10px;
+  border-radius: 0.625rem;
   cursor: pointer;
   float: right;
-  font-size: 20px;
-  margin: 0 15px;
-  box-shadow: -0px 0 30px var(--color-shadow);
+  font-size: 1.25rem;
+  margin: 0 0.9375rem;
+  box-shadow: 0rem 0 1.875rem var(--color-shadow);
 }
 
 button[type="submit"]:hover {
-  background-color:var(--color-primary);
+  background-color: var(--color-primary);
   transition: 0.2s;
 }
 
@@ -386,95 +402,112 @@ button[type="submit"]:hover {
 
 .footer-row a {
   display: inline-block;
-  margin: 0 10px;
+  margin: 0 0.625rem;
 }
 
 .footer-social-icon {
-  font-size: 24px;
-  color:var(--black);
-  background-color:var(--white);
+  font-size: 1.5rem;
+  color: var(--black);
+  background-color: var(--white);
   border-radius: 50%;
-  padding: 10px;
+  padding: 0.625rem;
   transition: background-color 0.3s ease;
 }
 
 .fas,
 .fab {
-  font-size: 30px;
+  font-size: 1.875rem;
   text-align: center;
 }
 
+
 /* ------------------- Non-PC device styles ----------------------------*/
 
-/*---------------- Mobile -------------------------*/
+/*---------------- MOBILE -------------------------*/
 
-@media only screen and (max-width: 768px) {
-  .section-link {
-    padding: 10px 20px;
+@media (max-width: 767px)  {
+  div, section {
+    flex-direction: column;
+    overflow: visible;
+  }
+  .horizontal-content-box {
+    flex-direction: column;
+  }
+  .profile-picture {
+    margin: 10%;
+  }
+  .interactive-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .skill-element {
+    flex-basis: 30%;
+    box-sizing: border-box;
     margin: 5px;
   }
-
-  .about-me-info {
-    align-items: center;
-    text-align: center;
-  }
-
-  .profile-picture {
-    margin: 20px 0;
-  }
-
-  .skill-element {
-    width: 33.33%;
-  }
-
-  .quote {
-    font-size: 20px;
-  }
-
   .project-box {
-    width: calc(50% - 20px);
-  }
-
-  .contact-form {
     width: 80%;
   }
-}
-
-/*---------------- tablet ----------------- */
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
-  .about-me-info {
-    width: 45%;
-  }
-
-  .profile-picture {
-    width: 45%;
-    margin: 0;
-  }
-
-  .skill-element {
-    width: 20%;
-  }
-
-  .project-box {
-    width: calc(33.33% - 20px);
+  .contact-form {
+    width: 100%;
   }
 }
-
-@media only screen and (min-width: 1025px) and (max-width: 1280px) {
-  .about-me-info {
-    width: 45%;
+/*---------------- TABLETS ----------------- */
+@media only screen and (min-width: 48rem) and (max-width: 64rem) {
+  div, section {
+    overflow: visible;
   }
-
+  .horizontal-content-box {
+    flex-direction: column;
+  }
   .profile-picture {
-    width: 45%;
-    margin: 0;
+    margin: 10%;
   }
-
+  .interactive-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
   .skill-element {
-    width: 25%;
+    flex-basis: 30%;
+    box-sizing: border-box;
+    margin: 5px;
   }
-
   .project-box {
-    width: calc(33.33% - 20px);
+    width: 23%;
+  }
+  .contact-form {
+    width: 100%;
+    flex-direction: row;
+  }
+}
+
+@media only screen and (min-width: 64.0625rem) and (max-width: 80rem) {
+  div, section {
+    overflow: visible;
+  }
+  .horizontal-content-box {
+    flex-direction: column;
+  }
+  .profile-picture {
+    margin: 10%;
+  }
+  .interactive-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .skill-element {
+    flex-basis: 30%;
+    box-sizing: border-box;
+    margin: 5px;
+  }
+  .project-box {
+    width: 23%;
+  }
+  .contact-form {
+    width: 100%;
+    flex-direction: row;
   }
 }

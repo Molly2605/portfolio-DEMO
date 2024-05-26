@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="styles/index.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="icon" type="image/png" href="images/favicon.png" />
     <link
       href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;700&display=swap"
       rel="stylesheet"
@@ -51,7 +52,7 @@
     <section class="section about-me" id="about-me">
       <div class="horizontal-content-box">
         <div class="about-me-info">
-          <p>¡Hola! me llamo</p>
+          <p class="introduction">¡Hola! me llamo</p>
           <p class="my-surname hover-highlight">Lasschar</p>
           <h1 class="my-name hover-highlight">milagros belén</h1>
           <p class="introduction section-description">
@@ -65,7 +66,11 @@
           >
         </div>
 
-        <img src="images/bunny.jpg" alt="Mi foto" class="profile-picture" />
+        <img
+          src="images/bunny.jpg"
+          alt="foto de perfil"
+          class="profile-picture"
+        />
       </div>
     </section>
 
@@ -165,17 +170,41 @@
     <!--CONTACT ME-->
     <section id="contact-me" class="section">
       <div class="horizontal-content-box contact-form">
-        <div>
-          <h2>Contactame</h2>
+        <div class="find-me-on">
+          <h2>Encontrame en</h2>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque quo
             nobis voluptatum tenetur! Id, nesciunt? Modi quasi repudiandae quam
             hic quo, qui cumque nam voluptates, ipsam, tempora eaque numquam
             eligendi.
           </p>
+          <a
+            href="https://github.com/Molly2605"
+            aria-label="Github"
+            target="_blank"
+          >
+            <i class="fab fa-github footer-social-icon hover-grow"></i>
+            Molly2605
+          </a>
+          <a
+            href="https://www.linkedin.com/in/milagros-lasschar/"
+            target="_blank"
+            aria-label="Linkedin"
+          >
+            <i class="fab fa-linkedin-in footer-social-icon hover-grow"></i>
+            Milagros Lasschar
+          </a>
+          <a
+            target="_blank"
+            href="https://mail.google.com/mail/?view=cm&to=mililasschar@gmail.com&su=Contacto&body=¡Hola!"
+            aria-label="Email"
+          >
+            <i class="fas fa-envelope footer-social-icon hover-grow"></i>
+            mili_lasschar@hotmail.com
+          </a>
         </div>
-        <div>
-          <h2>Escribime</h2>
+        <div class="form-list">
+          <h2>Contactame</h2>
           <form action="#" method="post">
             <div class="form-field">
               <input type="text" name="nombre" placeholder="Nombre" required />
@@ -220,16 +249,25 @@
 
       <!--SOCIAL MEDIA LINK FOOTER-->
       <div class="footer-row">
-        <a href="https://github.com/Molly2605" aria-label="Github">
+        <a
+          href="https://github.com/Molly2605"
+          aria-label="Github"
+          target="_blank"
+        >
           <i class="fab fa-github footer-social-icon hover-grow"></i>
         </a>
         <a
           href="https://www.linkedin.com/in/milagros-lasschar/"
           aria-label="Linkedin"
+          target="_blank"
         >
           <i class="fab fa-linkedin-in footer-social-icon hover-grow"></i>
         </a>
-        <a href="mili_lasschar@hotmail.com" aria-label="Email">
+        <a
+          href="https://mail.google.com/mail/?view=cm&to=mililasschar@gmail.com&su=Contacto&body=¡Hola!"
+          aria-label="Email"
+          target="_blank"
+        >
           <i class="fas fa-envelope footer-social-icon hover-grow"></i>
         </a>
       </div>
