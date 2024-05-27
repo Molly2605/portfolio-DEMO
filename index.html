@@ -1,12 +1,276 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style/style.css">
-</head>
-<body>
-    
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Milagros Lasschar</title>
+    <link rel="stylesheet" href="styles/index.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="icon" type="image/png" href="images/favicon.png" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Arizonia&family=Fleur+De+Leah&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css"
+    />
+  </head>
+  <body>
+    <!--SIDEBAR MENU-->
+    <input type="checkbox" id="sidebar-toggle" class="sidebar-toggle" />
+    <div class="sidebar">
+      <nav>
+        <ul class="sidebar-list">
+          <li><a href="#about-me" class="section-link">SOBRE MÍ</a></li>
+          <li><a href="#skills" class="section-link">CONOCIMIENTOS</a></li>
+          <li><a href="#projects" class="section-link">PROYECTOS</a></li>
+          <li><a href="#contact-me" class="section-link">CONTACTO</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <label for="sidebar-toggle" class="burger-icon">
+      <span></span>
+      <span></span>
+      <span></span>
+    </label>
+
+    <!--ABOUT ME-->
+    <section class="section about-me" id="about-me">
+      <div class="horizontal-content-box">
+        <div class="about-me-info">
+          <p class="introduction">¡Hola! me llamo</p>
+          <p class="my-surname hover-highlight">Lasschar</p>
+          <h1 class="my-name hover-highlight">milagros belén</h1>
+          <p class="introduction section-description">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Modi
+            obcaecati commodi alias nesciunt beatae aspernatur doloribus eveniet
+            mollitia. Necessitatibus tenetur dignissimos repudiandae a sunt, in
+            iste similique tempora vel explicabo?
+          </p>
+          <a href="#projects" class="section-link my-projects-button"
+            >MIS PROYECTOS</a
+          >
+        </div>
+
+        <img
+          src="images/bunny.jpg"
+          alt="foto de perfil"
+          class="profile-picture"
+        />
+      </div>
+    </section>
+
+    <!--SKILLS-->
+    <section class="section" id="skills">
+      <div>
+        <h2 class="section-title">Mis conocimientos</h2>
+        <p class="section-description">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur
+          corporis mollitia, ipsa deserunt consequatur aliquid vitae error
+          excepturi delectus eos laborum saepe quasi illum id deleniti.
+          Accusamus molestiae laudantium corporis!
+        </p>
+        <div class="interactive-list">
+          <div class="skill-element hover-grow">
+            <i class="devicon-html5-plain colored"></i>
+          </div>
+          <div class="skill-element hover-grow">
+            <i class="devicon-css3-plain colored"></i>
+          </div>
+          <div class="skill-element hover-grow">
+            <i class="devicon-sass-original colored"></i>
+          </div>
+          <div class="skill-element hover-grow">
+            <i class="devicon-javascript-plain colored"></i>
+          </div>
+          <div class="skill-element hover-grow">
+            <i class="devicon-react-original colored"></i>
+          </div>
+          <div class="skill-element hover-grow">
+            <i class="devicon-git-plain colored"></i>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--QUOTE-->
+    <section class="section">
+      <div>
+        <h2 class="section-title">Una persona sabia una vez dijo...</h2>
+        <blockquote>
+          <p class="section-description quote">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eligendi
+            quaerat aspernatur laboriosam doloremque iste perspiciatis veniam
+            culpa beatae magni quo natus nostrum, laudantium exercitationem sit
+            minima aut totam praesentium aliquam.
+          </p>
+        </blockquote>
+        <i class="far fa-heart"></i>
+        <h2 class="quote-author">Un escritor latín, hace mucho tiempo.</h2>
+      </div>
+    </section>
+
+    <!--PORTFOLIO-->
+    <section class="section" id="projects">
+      <div class="content-box">
+        <h2 class="section-title">Mis proyectos</h2>
+        <p class="section-description">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis
+          delectus non est tempore provident hic sunt magnam laborum minus
+          quisquam facilis praesentium dolorem cumque eos tempora dolores rerum,
+          explicabo officia?
+        </p>
+        <div class="interactive-list">
+          <div class="project-box hover-grow">
+            <img src="images/portfolio.png" alt="imagen portafolio" />
+            <p class="project-title">Portafolio</p>
+          </div>
+          <div class="project-box hover-grow">
+            <img src="images/memes.png" alt="imagen memes" />
+            <p class="project-title">Generador de memes</p>
+          </div>
+          <div class="project-box hover-grow">
+            <img src="images/match3.png" alt="imagen match 3" />
+            <p class="project-title">Match 3</p>
+          </div>
+          <div class="project-box hover-grow">
+            <img src="images/money.png" alt="imagen gastos" />
+            <p class="project-title">Controlador de gastos</p>
+          </div>
+          <div class="project-box hover-grow">
+            <img src="images/meet.png" alt="imagen reunion" />
+            <p class="project-title">Administrador de reuniones</p>
+          </div>
+          <div class="project-box hover-grow">
+            <img src="images/all-app.png" alt="imagen app" />
+            <p class="project-title">Todo app</p>
+          </div>
+          <div class="project-box hover-grow">
+            <img src="images/movie.png" alt="imagen pelicula" />
+            <p class="project-title">Buscador de películas</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--CONTACT ME-->
+    <section id="contact-me" class="section">
+      <div class="horizontal-content-box contact-form">
+        <div class="find-me-on">
+          <h2>Encontrame en</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque quo
+            nobis voluptatum tenetur! Id, nesciunt? Modi quasi repudiandae quam
+            hic quo, qui cumque nam voluptates, ipsam, tempora eaque numquam
+            eligendi.
+          </p>
+          <a
+            href="https://github.com/Molly2605"
+            aria-label="Github"
+            target="_blank"
+          >
+            <i class="fab fa-github footer-social-icon hover-grow"></i>
+            Molly2605
+          </a>
+          <a
+            href="https://www.linkedin.com/in/milagros-lasschar/"
+            target="_blank"
+            aria-label="Linkedin"
+          >
+            <i class="fab fa-linkedin-in footer-social-icon hover-grow"></i>
+            Milagros Lasschar
+          </a>
+          <a
+            target="_blank"
+            href="https://mail.google.com/mail/?view=cm&to=mililasschar@gmail.com&su=Contacto&body=¡Hola!"
+            aria-label="Email"
+          >
+            <i class="fas fa-envelope footer-social-icon hover-grow"></i>
+            mili_lasschar@hotmail.com
+          </a>
+        </div>
+        <div class="form-list">
+          <h2>Contactame</h2>
+          <form action="#" method="post">
+            <div class="form-field">
+              <input type="text" name="nombre" placeholder="Nombre" required />
+            </div>
+            <div class="form-field">
+              <input
+                type="text"
+                name="apellido"
+                placeholder="Apellido"
+                required
+              />
+            </div>
+            <div class="form-field">
+              <input
+                type="email"
+                name="email"
+                placeholder="Correo electrónico"
+                required
+              />
+            </div>
+            <div class="form-field">
+              <textarea
+                name="mensaje"
+                placeholder="Mensaje"
+                required
+              ></textarea>
+            </div>
+            <button type="submit">Enviar</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <!--SECTION LINK FOOTER-->
+      <div class="footer-row">
+        <a href="#about-me" class="section-link">SOBRE MÍ</a>
+        <a href="#skills" class="section-link">CONOCIMIENTOS</a>
+        <a href="#projects" class="section-link">PROYECTOS</a>
+        <a href="#contact-me" class="section-link">CONTACTO</a>
+      </div>
+
+      <!--SOCIAL MEDIA LINK FOOTER-->
+      <div class="footer-row">
+        <a
+          href="https://github.com/Molly2605"
+          aria-label="Github"
+          target="_blank"
+        >
+          <i class="fab fa-github footer-social-icon hover-grow"></i>
+        </a>
+        <a
+          href="https://www.linkedin.com/in/milagros-lasschar/"
+          aria-label="Linkedin"
+          target="_blank"
+        >
+          <i class="fab fa-linkedin-in footer-social-icon hover-grow"></i>
+        </a>
+        <a
+          href="https://mail.google.com/mail/?view=cm&to=mililasschar@gmail.com&su=Contacto&body=¡Hola!"
+          aria-label="Email"
+          target="_blank"
+        >
+          <i class="fas fa-envelope footer-social-icon hover-grow"></i>
+        </a>
+      </div>
+    </footer>
+  </body>
 </html>
