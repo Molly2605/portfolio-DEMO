@@ -51,11 +51,13 @@ h2 {
 
 h1 {
   font-size: 3.75em;
+  /* Font weight no acepta valores con unidad de medida */
   font-weight: 31.25em;
 }
 
 h2 {
   font-size: 2.5em;
+  /* Font weight no acepta valores con unidad de medida */
   font-weight: 56.25em;
 }
 
@@ -67,6 +69,7 @@ a {
 
 ul,
 li {
+  /* Esta propiedad se aplica a listas no a elementos de listas */
   list-style: none;
 }
 
@@ -265,6 +268,7 @@ footer {
   overflow: hidden;
   box-shadow: 0rem 0 1.875rem rgb(255, 30, 105);
   margin: 0 1.875rem;
+  /* No existe la propiedad "background-imge" */
   transition-property: background-imge;
   transition-duration: 1s;
   transition-timing-function: ease-in;
